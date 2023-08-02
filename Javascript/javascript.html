@@ -12,9 +12,7 @@
     <input type="text" id="v1" placeholder="Digite um número"><br>
     <input type="text" id="v2" placeholder="Digite um número">
     <p id="res">Resposta: </p>
-    <button type="button" onclick="Soma()">Soma</button>
-
-    <script src="script.js" type="text/javascript"></script>
+    <button onclick="Soma()">Soma</button>
 
     <h2>The window.print() Method</h2>
 
@@ -24,8 +22,24 @@
 
     <h2>Local storage</h2>
     <input type="text" id="name"placeholder="Digite seu nome">
-    <button type="button" onclick="testLocalStorage()">Save</button>
+    <button onclick="testLocalStorage()">Save</button>
     <p id="local"></p>
+
+    <h2>Fetch api cep</h2>
+    <form class="form" onsubmit="buscarCep(event, this);">
+        <fieldset>
+            <legend>Via Cep</legend>
+            <label>Digite seu Cep</label>
+            <input autofocus autocomplete="off" class="form___data" id="cep" maxlength="8" name="cep" pattern="([\d]{8})" placeholder="Digite o CEP aqui" required type="text">
+            <button class="form__button" type="submit">Buscar CEP</button>
+        </fieldset>
+    </form>
+    <h2>Resultado da pesquisa</h2>
+    <div id="resultCep">Nenhum resultado encontrado</div>
+
+
+
+    <script src="script.js" type="text/javascript"></script>
 
 
 </body>
