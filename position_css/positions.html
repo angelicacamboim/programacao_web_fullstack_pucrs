@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="styles_position.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>position: static;</h2>
+
+    <div class="static">
+        <h3>This div element has position: static;</h3>
+
+        Os elementos são posicionados no fluxo normal do documento e de acordo
+        com o fluxo da página. Eles não são afetados pelas propriedades top, right,
+        bottom ou left.
+    </div>
+
+    <h2>position: relative;</h2>
+
+    <div class="relative">
+        <h3>This div element has position: relative; </h3>
+        <p>Os elementos são posicionados em relação à sua posição original no fluxo
+            normal do documento, assim os valores top, right, bottom e left são
+            aplicados em relação a essa posição original, não em relação a outros
+            elementos na página.</p>
+    </div>
+
+    <h2>position: absolute;</h2>
+
+    <p>Os elementos são posicionados em relação ao elemento pai mais próximo que tenha
+        uma posição definida.
+        O elemento é removido do fluxo normal do documento e não ocupa espaço em seu
+        local original, permitindo que outros elementos se posicionem em relação a ele.</p>
+    <div class="relative"><h3>This div element has position: relative;</h3>
+        
+        <div class="absolute">
+            <h3>This div element has position: absolute;</h3>
+            
+        </div>
+    </div>
+
+    <h2>position: fixed;</h2>
+
+    <p>Os elementos são posicionados em relação à janela do navegador, permanecendo na
+        mesma posição, mesmo quando o usuário rolar a página.
+        O elemento é removido do fluxo normal do documento e não ocupa espaço em seu
+        local original, permitindo que outros elementos se posicionem em relação a ele.</p>
+
+    <div class="fixed">
+        <h3>This div element has position: fixed;</h3>
+    </div>
+
+    <h2>position: sticky;</h2>
+    <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+    <div class="sticky">
+        <h3>I am sticky!</h3>
+        Os elementos são posicionados como relative até que o usuário role a página a
+        uma determinada posição, onde ele se torna fixed. O elemento permanecerá na
+        mesma posição em relação à janela do navegador até que o usuário role a página
+        para uma posição diferente.
+        Quando um elemento é posicionado como sticky, ele ainda ocupa espaço em seu
+        local original no fluxo do documento, mas é deslocado de sua posição original
+        quando se torna fixed.
+    </div>
+
+    <div style="padding-bottom:2000px">
+        <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll
+            position.</p>
+        <p>Scroll back up to remove the stickyness.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+            concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+            Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+            concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+            Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>
+
+
+
+</body>
+
+</html>
