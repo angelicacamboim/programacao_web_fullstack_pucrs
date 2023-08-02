@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Input text</h2>
+    <form action="...(1)..." method="POST">
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            <label>Informe o nome</label>
+            <input type="text" name="nome" />
+            <label>Informe o e-mail</label>
+            <input type="text" name="email" />
+            <button type="submit">Envia</button>
+        </fieldset>
+    </form>
+
+    <h2>Input button</h2>
+    <form action="....(1)...." method="POST">
+        <fieldset>
+            <legend>Escolha uma das opções abaixo</legend>
+            <label>Envio dos dados</label>
+            <input type="button" value="envia" />
+            <label>Cancela todos os dados do formulário</label>
+            <input type="button" value="cancel" />
+        </fieldset>
+    </form>
+
+    <h2>Input checkbox</h2>
+    <form action="....(1)...." method="POST">
+        <fieldset>
+            <legend>Qual é o pet que você tem?</legend>
+            <input type="checkbox" name="cachorro" value="cachorro" />
+            <label>Cachorro</label>
+            <input type="checkbox" name="gato" value="gato" />
+            <label>Gato</label>
+        </fieldset>
+    </form>
+
+    <h2>Input date</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <label>Escolha uma data do banho e tosa:</label>
+            <input type="date" name="databanhotosa" />
+        </fieldset>
+    </form>
+
+    <h2>Input email e password</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <label>Email:</label>
+            <input type="email" name="email"><br><br>
+            <label>Senha:</label>
+            <input type="password" name="senha" minlength="8"><br><br>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+    <h2>Input file</h2>
+    <form action=".....(1).....">
+        <label>Selecione o arquivo:</label>
+        <input type="file" name="arquivo"><br><br>
+        <input type="submit">
+    </form>
+
+    <h2>Input fle multiplo</h2>
+    <form action="....(1)....">
+        <label>Selecione os arquivos:</label>
+        <input type="file" name="arquivos" multiple><br><br>
+        <input type="submit">
+    </form>
+
+    <h2>Input radio</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <label>Escolha o seu pet:</label>
+            <br />
+            <label>Cachorro</label>
+            <input type="radio" value="cachorro" />
+            <label>Gato</label>
+            <input type="radio" value="gato" />
+        </fieldset>
+    </form>
+
+    <h2>Input reset</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <legend>Qual é o pet que você tem?</legend>
+            <label>Nome do pet:</label>
+            <input type="text" />
+            <input type="reset" value="Reset" />
+        </fieldset>
+    </form>
+
+    <h2>Input submit</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <label>Envio dos dados do formulário</label>
+            <input type="submit" value="submit" />
+        </fieldset>
+    </form>
+
+    <h2>Input tel</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <label>Email:</label>
+            <input type="email" name="email"><br><br>
+            <label>Senha:</label>
+            <input type="password" name="senha" minlength="8"><br><br>
+            <label>Informe o seu telefone celular:</label>
+            <input type="tel" name="fone" placeholder="dddXXXXXXXX" pattern="[0-9]{10}" required><br><br>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+    <h2>Textarea</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <legend>Deixa o seu comentário!</legend>
+            <textarea name="comentario" cols="50" rows="5"></textarea><br><br>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+   <h2>Select options - combobox</h2>
+    <form action="....(1)...." method="POST">
+        <p>Selecione o setor que você deseja atendimento:
+            <select name="setor">
+                <option value="racoes">Rações</option>
+                <option value="medicamentos">Medicamentos</option>
+                <option value="acessorios">Acessórios</option>
+                <option value="consultas">Consulta</option>
+                <option value="outros">Outros</option>
+            </select>
+            <input type="submit">
+        </p>
+    </form>
+
+    <h2>Form oninput</h2>
+    <form oninput="x.value=parseFloat(a.value)*parseFloat(b.value)">
+        <p>Digite o número de horas trabalhadas: <input type="text" id="a"></p>
+        <p>O valor da hora é: <input type="text" id="b"></p>
+        <p>O valor a receber dia 5 é R$ <output name="x"></output></p>
+    </form>
+
+    <h2>Input name e email requerid</h2>
+    <label>Informe o nome</label>
+    <input type="text" name="nome" placeholder="Digite o nome" required />
+    <label>Informe o e-mail</label>
+    <input type="text" name="email" placeholder="Digite o e-mail" required />
+
+    <h2>Input text login - pattern=[A-Za-z]{2,}</h2>
+    <form action="....(1)...." method="POST"> 
+        <fieldset>
+        <legend>Faça o login no sistema</legend>
+        <input type="text" name="login" pattern="[A-Za-z]{2,}" placeholder="Digite o login" required/> 
+        <input type="submit" value="Submit"/> 
+        </fieldset>
+        </form>
+
+        
+</body>
+
+</html>
