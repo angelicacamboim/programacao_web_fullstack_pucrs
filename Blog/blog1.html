@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Post</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+ <!-- Menus -->
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./blog_icon.png" width="50px" height="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">News</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md">
+      <h2 id="source_name">Gizmodo.com</h2>
+
+      <div class="card">
+        <img id="urlToImage" src="https://www.digitaltrends.com/wp-content/uploads/2023/07/samsung-galaxy-s23-ultra-camera-shot-1.jpg?resize=1200%2C630&p=1" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" id="article_title">Samsung Galaxy S23, Galaxy S23 Ultra are heavily discounted today - Digital Trends</h5>
+          <p class="card-text" id="article_publishedAt">19/10/2010</p>
+          <p class="card-text" id="article_description">The Samsung Galaxy S23, Samsung Galaxy S23 Plus, and Samsung Galaxy S23 Ultra are discounted on Amazon. Take this chance to get them for cheaper than usual</p>
+          <p class="card-text" id="article_content">Samsung’s current lineup of flagship smartphones are all on sale on Amazon with heavy discounts that make them very attractive options as your next smartphone. The 128GB model of the Samsung Galaxy S… [+2309 chars]</p>
+          <p class="card-text" id="article_url">link</p>
+        </div>
+      </div>
+      <div class="mt-4 col-md-10 mx-auto">
+        <h3>Comentários</h3>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <p>Nome: AAA</p>
+            <p>Comentário: AA4643 56456 43645A</p>
+        </li>
+          <li class="list-group-item">
+            <p>Nome: AAA</p>
+            <p>Comentário: AA4643 56456 43645A</p>
+          </li>
+          <li class="list-group-item">
+            <p>Nome: AAA</p>
+            <p>Comentário: AA4643 56456 43645A</p>
+          </li>
+        </ul>
+      </div>
+      <div class="mt-4 col-md-6 mx-auto">
+        <h3>Adicionar Comentário</h3>
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome">
+          </div>
+          <div class="mb-3">
+            <label for="comentario" class="form-label">Comentário</label>
+            <textarea class="form-control" id="comentario" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Comentário</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
