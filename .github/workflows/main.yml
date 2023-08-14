@@ -1,0 +1,15 @@
+name: Example Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run shell script
+      env:
+        APIKEY: ${{ secrets.APIKEY }}
+      run: |
+        echo "Using API key: $APIKEY"
+        example-command "$APIKEY"
