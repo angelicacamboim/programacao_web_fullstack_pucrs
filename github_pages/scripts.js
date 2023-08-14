@@ -1,6 +1,8 @@
+const apiKey = config.apiKey;
+
 fetch("https://api.github.com/user", {
   headers: {
-    Authorization: `token `,
+    Authorization: `token ${apiKey}`,
   },
 })
   .then((response) => response.json())
