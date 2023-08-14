@@ -1,6 +1,6 @@
 fetch("https://api.github.com/user", {
   headers: {
-    Authorization: `token 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`,
+    Authorization: `token `,
   },
 })
   .then((response) => response.json())
