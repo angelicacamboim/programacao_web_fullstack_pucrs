@@ -19,15 +19,17 @@ body, html {
 .container {
     background-color: #f2f2f2; /* Cor de fundo */
     max-width: 400px; /* Largura máxima do contêiner */
-    margin: 0 auto; /* Centralizar horizontalmente */
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Alinha itens à esquerda verticalmente */
     align-items: center;
     text-align: left; /* Alinha o texto à esquerda */
-    border: 1px solid palevioletred; /* Borda */
+    
+    margin: auto; /* Centralizar horizontalmente */
+    border: 10px dashed pink;/* Borda */
     border-radius: 10%;
     padding: 20px;
+
     box-sizing: border-box;
   }
   

@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box; /* fazer os calculos apartir da borda*/
+}
+
+
+.boxSizing-example {
+    width: 100px; 
+    height: 100px;
+    border: 10px outset red;
+    margin: 10%;
+    padding: 0 20px;
+
+ }
+
+ .block-example {
+    display: block;
+    width: 80%;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: 10px inset #ccc;
+  }
+
+  .inline-example{
+    border: 10px ridge #ccc;
+
+  }
+  .inline-example p{
+    display: inline;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 10px groove #ccc;
+
+  }
+
+  .example-box {
+    width: 100px;
+    height: 100px;
+    border: 10px double black;
+    margin-bottom: 10px; /* Margem inferior */
+  }
+
+  #margin {
+    margin-top: 50px;
+  }
+
+  .padding-example {
+    border: 10px dashed black; 
+    outline: black 4px solid;
+   
+    width: 200px;
+
+    padding: 20px 50px;
+  }
+
+  .border-example {
+    width: 100px;
+    height: 100px;
+    border: 10px dotted pink; 
+
+  }
