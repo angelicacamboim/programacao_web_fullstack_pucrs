@@ -1,0 +1,64 @@
+/* Tipos de seletores
+
+seletor global, que é um * (asterisco)
+tipo de seletor 'h1, h2, p, div'
+ID selector, que é # (cerquilha, cardinal) 
+class selector, que é um . (ponto) e o nome da classe
+atritutos de seletor, pseudo-classes, pseudo-element
+
+*/
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ff66b2, #ff80c0, #ff99cc, #ffb3d9, #ffccf2);
+  }
+
+
+.container {
+    background-color: #f2f2f2; /* Cor de fundo */
+    max-width: 400px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centralizar horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha itens à esquerda verticalmente */
+    align-items: center;
+    text-align: left; /* Alinha o texto à esquerda */
+    border: 1px solid palevioletred; /* Borda */
+    border-radius: 10%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #ff66b2;
+    font-weight: bold;
+
+  }
+  
+  .item-list {
+    list-style: none;
+    padding-right: 10vw;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  .item-list li {
+    margin-bottom: 10px;
+  }
+  
+  .item-list a:link {
+    text-decoration: none;
+    color: palevioletred;
+    font-weight: bold;
+
+  }
+  /* visited link */
+ .item-list a:visited {
+    color: gray;
+ }
+
+
+ 

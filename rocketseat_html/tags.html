@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <!--Meta SEO-->
+    <meta name="author" content="Angelica">
+    <meta name="description" content="Um website para iniciantes em programação">
+    <meta name="robots" content="index, follow">
+    <title>Images</title>
+    <!--Meta social-->
+    <!-- Open Graph: facebook -->
+    <meta property="og:image" content="https://cdn-images-1.medium.com/max/92/1*TkXVfLTwsHdwpUEjGzdi9w@2x.jpeg">
+    <meta property="og:description" content="Aqui vem um texto para ser mostrado ao compartilhar no facebook">
+    <meta property="og:title" content="Um site da Rocketseat">
+
+    <!-- twitter -->
+    <meta name="twitter:title" content="Rocketseat">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="forms.html">Formulário</a></li>
+            <li><a href="tags.html">Tags</a></li>
+        </ul>
+    </nav>
+
+    <h3>Ancoras</h3>
+    <p><a href="#conceitos">Conceitos</a></p>
+    <p><a href="#tabelas">Tabelas</a></p>
+    <p><a href="#audio">Audio</a></p>
+    <p><a href="#video">Video</a></p>
+    <p><a href="#imagens">Imagens</a></p>
+    <p><a href="#semantica">Semantica em HTML</a></p>
+
+
+    <h1 id="conceitos">Conceitos</h1>
+
+    <h3>TAG STRONG</h3>
+    <p>Utilize a tag <strong>&lt;strong&gt;</strong> para destacar o texto em <strong>negrito</strong>.</p>
+
+    <h3>TAG EM</h3>
+    <p>Use a tag <em>&lt;em&gt;</em> para enfatizar o texto em <em>itálico</em>.</p>
+
+    <h3>TAG SMALL</h3>
+    <p>Para textos menores, a tag <small>&lt;small&gt;</small> pode ser usada para criar <small>texto reduzido</small>.
+    </p>
+
+
+    <h3>TAG VAR</h3>
+    <p>O valor da variável <var>x</var> é 5.</p>
+
+    <h3>TAG KBD</h3>
+    <p>Para abrir o prompt de comando, digite em pesquisar <kbd>cmd</kbd> e depois <kbd>Enter</kbd>.</p>
+
+
+    <h3>TAG SUB</h3>
+    <p>A fórmula química da água é H<sub>2</sub>O.</p>
+
+    <h3>TAG SUP</h3>
+    <p>10<sup>2</sup> é igual a 100</p>
+
+    <h3>TAG TIME</h3>
+    <p> O evento está agendado para <time datetime="2023-09-15T15:00">15 de setembro de 2023, às 15:00</time> </p>
+
+    <h3>TAG DATETIME</h3>
+    <p>
+        <datetime>2023-08-30 14:30</datetime> é o momento em que a reunião começará.
+    </p>
+
+    <h2>HTML List Examples</h1>
+
+        <h3>Lista Não Ordenada - TAG UL</h3>
+        <ul>
+            <li>Tags de marcação</li>
+            <li>Estrutura básica</li>
+            <li>Links e âncoras</li>
+            <li>Imagens</li>
+        </ul>
+
+        <h3>Lista Ordenada - TAG OL</h3>
+        <ol>
+            <li>Introdução ao HTML</li>
+            <li>Elementos e atributos</li>
+            <li>Estrutura do documento</li>
+            <li>Sintaxe e semântica</li>
+        </ol>
+
+        <h2>Citações</h2>
+        <h3>Tag code</h3>
+
+        <p>Para exibir uma variável em JavaScript, use o código <code><strong>console.log(nomeVariavel);</strong></code>
+        </p>
+
+        <h3>TAG BLOCKQUOTE</h3>
+
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+            <p>A tag &lt;blockquote&gt; é usada para citar um trecho de texto de outra fonte.</p>
+            <p> O atributo cite é opcional e é usado para fornecer um link para a fonte original da citação. Ele deve
+                conter
+                a
+                URL da página onde a citação foi obtida.</p>
+        </blockquote>
+
+        <h3>Tag q</h3>
+        <q>citação curtas com aspas.</q>
+
+        <h2>Abreviações - TAG ABBR</h2>
+        <p>Usamos <abbr title="Hypertext Markup Language">HTML</abbr>para estruturar nossos documentos da web.</p>
+
+        <h2>Lista de descrição - TAG DL DT DD </h2>
+        <h3>Glossário</h3>
+        <dl>
+            <dt>Hypertext</dt>
+            <dd>É um hiper texto com possibilidades...</dd>
+
+            <dt>Markup</dt>
+            <dd>Marcação do texto</dd>
+
+            <dt>Languague</dt>
+            <dd>Linguagem com sua semântica e sintaxe....</dd>
+        </dl>
+
+        <h2>Representando códigos de computador - Tag Code</h2>
+        <pre>
+    <code>
+        Cypress.Commands.add(
+          "fillMandatoryFieldsAndSubmit",
+          (nome, sobrenome, email, text) => {
+          //Nome
+          cy.get("#firstName").type(nome);
+          //sobrenome
+          cy.get("#lastName").type(sobrenome);
+        //botão enviar
+        cy.contains("button", "Enviar").click();
+  }
+);
+        
+    </code>
+</pre>
+
+        <h2>TAG SPAN</h2>
+        <div class="cart">
+            <span>Camiseta</span>
+            <span>r$ 99,00</span>
+        </div>
+
+        <p>Hello <span style="color:palevioletred">World!</span></p>
+
+        <h2>Tag A</h2>
+        <!--  
+  url - http
+  fragmento - #section
+  email - mailto
+  telefone - tel
+-->
+        <p><a href="#section">Ir para a seção de listas</a></p>
+        <p><a href="mailto:contato@example.com">Email</a></p>
+        <p><a href="tel:+1234567890">Ligar</a></p>
+        <p><a href="https://www.google.com" target="_blank">Website
+                <h3>Website Google</h3>
+                <p>Website paragrafo</p>
+                <img src="#" alt="">Website imagem</img>
+            </a>
+        </p>
+
+        <h2>Detalhes de contato - TAG ADDRESS</h2>
+
+        <address>
+            <p>Angel <br>
+                <strong>Campo Grande, MS</strong>
+            </p>
+        </address>
+
+        <h1 id="tabelas">Tabelas</h1>
+
+        <table>
+
+            <caption>Pessoas por idade</caption>
+
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mayk</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Diego</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total:</td>
+                    <td>2 Pessoas</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        <h2>Tabelas complexas</h2>
+        <table border="1px">
+            <caption>Produzidos x Vendidos por Loja</caption>
+
+            <colgroup>
+                <col>
+                <col span="4" style="background-color: greenyellow;">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th rowspan="2">Produtos</th>
+                    <th colspan="2" scope="colgroup">Afonso Pena</th>
+                    <th colspan="2" scope="colgroup">Antônia Pereira</th>
+                </tr>
+                <tr>
+                    <th scope="col">Produzidos</th>
+                    <th scope="col">Vendidos</th>
+                    <th scope="col">Produzidos</th>
+                    <th scope="col">Vendidos</th>
+                </tr>
+            </thead>
+            <tbody bgcolor="pink">
+                <tr>
+                    <th scope="row">Vassouras</th>
+                    <td>50</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th scope="row">Baldes</th>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 id="video">Video</h1>
+        <video src="#" width="320" height="240" controls></video>
+
+        <video controls width="640" height="360" autoplay preload="metadata" loop>
+            <!-- Primeira fonte: formato MP4 -->
+            <source src="#" type="video/mp4">
+            <!-- Segunda fonte: formato WebM -->
+            <source src="#" type="video/mp4">
+            <!-- Mensagem de fallback para navegadores que não suportam vídeo -->
+            Seu navegador não suporta a reprodução de vídeo.
+        </video>
+
+        <h2>Iframe</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kcw9hxYb53Q" 
+        frameborder="0" allowfullscreen title="Video da Rocketseat"></iframe>
+
+        <h1 id="audio">Audio</h1>
+        <audio src="#" controls autoplay></audio>
+    
+
+        <h1 id="imagens">Imagens</h1>
+        <h2>Image Gallery</h2>
+        <p>Here are some images:</p>
+        <img src="https://source.unsplash.com/random/300x201" alt="Image 1" title="Título">
+        <img src="https://source.unsplash.com/featured/300x201" alt="Image 2">
+
+        <h2>Figure</h2>
+        <figure>
+            <img src="https://source.unsplash.com/random/300x201" alt="Descrição da Imagem">
+            <figcaption>Legenda da Imagem</figcaption>
+        </figure>
+        <h2>SVG</h2>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+        </svg>
+
+        <h1 id="semantica">Semantica em HTML</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

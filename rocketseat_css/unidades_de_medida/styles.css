@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+    margin: 0;  
+  }
+  
+  .container {
+    height: calc(50%);
+    width: calc(50%);
+    background-image: url('https://source.unsplash.com/random'); /* Imagem aleatória do Unsplash */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .container::after {
+	content: "Isso é uma string";
+    color: black;
+}
+  
