@@ -1,0 +1,150 @@
+.transition-property {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 100%;
+    transition-property: background-color;
+    transition-duration: 2s;
+  
+  }
+  
+  .transition-property:hover {
+    background-color: blue;
+     transition-property: background-color;
+    transition-duration: 2s;
+  }
+  
+  .transition-timing-function-ease {
+    width: 50px;
+    height: 50px;
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    color: white;
+
+  }
+
+  .transition-timing-function-ease:hover {
+    width: 100%;
+    background-color: palevioletred;
+    transition-duration: 2s;
+
+  }
+
+  .transition-timing-function-linear {
+    width: 50px;
+    height: 50px;
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    color: white;
+
+  }
+
+  .transition-timing-function-linear:hover {
+    width: 100%;
+    background-color: palevioletred;
+    transition-duration: 2s;
+
+  }
+
+  .transition-timing-function-ease-in {
+    width: 50px;
+    height: 50px;
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    color: white;
+  }
+
+  .transition-timing-function-ease-in:hover {
+    width: 100%;
+    background-color: palevioletred;
+    transition-duration: 2s;
+
+  }
+
+  .transition-timing-function-ease-out {
+    width: 50px;
+    height: 50px;
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    color: white;
+
+  }
+
+  .transition-timing-function-ease-out:hover {
+    width: 100%;
+    background-color: palevioletred;
+    transition-duration: 2s;
+
+  }
+
+  .transition-timing-function-ease-in-out {
+    width: 50px;
+    height: 50px;
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    color: white;
+
+  }
+
+  .transition-timing-function-ease-in-out:hover {
+    width: 100%;
+    background-color: palevioletred;
+    transition-duration: 2s;
+
+  }
+
+  .transition-timing-function-cubic-bezier
+  {
+    width: 50px;
+    height: 50px;
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: white;
+  }
+  
+  .transition-timing-function-cubic-bezier:hover {
+    width: 100%;
+    background-color: palevioletred;
+    transition-duration: 2s;
+
+  }
+  /* transition - shorthand
+  
+    1.transition-property
+    2.transition-duration
+    3.transition-timing-function
+    4.transition-delay
+
+    transition: all 1s linear 0s;
+    transition: width 1s ease 1s;
+    transition: background-color 1s ease-in 0s;
+
+  */
+
+  .transition-delay {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: green;
+    transition: all 2s linear 1s;
+
+  }
+
+  .transition-delay:hover {
+     transition: all 2s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;
+     background-color: pink;
+     width: 300px;
+     height: 300px;
+  }

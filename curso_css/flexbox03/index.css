@@ -1,0 +1,11 @@
+img {
+  width: 30%;
+  height: auto;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap; /* quebrar a linha */
+  gap: .8rem;
+  justify-content: center;
+}
