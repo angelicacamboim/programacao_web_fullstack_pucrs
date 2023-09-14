@@ -1,0 +1,208 @@
+/* Defina uma variável com a notação --nome-variavel */
+:root {
+    --background-black: black;
+    --background-red: red;
+    --background-blueviolet: blueviolet;
+    --background-blue: blue;
+    --background-palevioletred: palevioletred;
+  }
+
+.black {
+ background-color: var(--background-black);
+}
+
+.red {
+background-color: var(--background-red);
+}
+
+.blueviolet {
+background-color: var(--background-blueviolet);
+}
+
+.blue {
+background-color: var(--background-blue);
+}
+
+.palevioletred {
+background-color: var(--background-palevioletred);
+}
+  
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 5px double var(--background-black);
+    background-color: var(--background-red);
+    position: relative;
+}
+
+.animation-direction-reverse {
+    animation-name: example-percent-color-direction;
+    animation-duration: 5s;
+
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+  }
+
+  .animation-iteration-count {
+    animation-name: example-percent-color;
+    animation-duration: 20s;
+
+    animation-iteration-count: 3;
+
+  }
+
+  .animation-alternate-reverse {
+    animation-name: example-percent-color-direction;
+    animation-duration: 10s;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+  }
+
+.animation-delay {
+    animation-name: example-from-to-color;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+
+  }
+
+  .animation-linear {
+    animation-name: example-from-to-direction-color;
+    animation-duration: 10s;
+
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+  }
+
+  .animation-ease {
+    animation-name: example-from-to-direction-color;
+    animation-duration: 10s;
+
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+  }
+
+  .animation-ease-in {
+    animation-name: example-from-to-direction-color;
+    animation-duration: 10s;
+
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+  }
+
+  .animation-ease-out {
+    animation-name: example-from-to-direction-color;
+    animation-duration: 10s;
+
+    animation-timing-function: ease-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+  }
+
+  .animation-ease-in-out {
+    animation-name: example-from-to-direction-color;
+    animation-duration: 10s;
+
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+  }
+
+  .animation-forwards {
+    animation-name: example-from-to-direction-color;
+    animation-duration: 2s;
+    animation-delay: 2s;
+
+    animation-fill-mode:forwards;
+
+  }
+  
+  .animation-backwards {
+    animation-name: example-from-to-direction-color;
+    animation-duration: 2s;
+    animation-delay: 2s;
+
+    animation-fill-mode:backwards;
+
+  }
+
+  .animation-both {
+    animation-name: example-from-to-direction-color;
+    animation-duration: 2s;
+    animation-delay: 2s;
+
+    animation-fill-mode:both;
+
+  }
+
+
+  /*KEYFRAMES */
+
+  @keyframes example-percent-color-direction {
+    0% {
+        background-color: var(--background-red);
+        left:0;
+        top:0;
+    }
+    25% {
+        background-color: var(--background-blueviolet);
+        left:300px;
+        top:0;
+    }
+    50% {
+        background-color: var(--background-blue);
+        left:300px;
+        top:300px;
+    }
+    75% {
+        background-color: var(--background-palevioletred);
+        left:0;
+        top:300px;
+    }
+
+    100% {
+        background-color: var(--background-red);
+        left:0;
+        top:0;
+    }
+  }
+  
+  @keyframes example-percent-color {
+    0% {background-color: var(--background-red);}
+    25% {background-color: var(--background-blueviolet)}
+    50% {background-color: var(--background-blue);}
+    100% {background-color: var(--background-palevioletred);}
+  }
+
+ 
+  
+  @keyframes example-from-to-color {
+    from {background-color: var(--background-blueviolet);}
+    to {background-color: var(--background-palevioletred);}
+  }
+
+  
+  @keyframes example-from-to-direction-color {
+    from {
+        left: 0px;
+        background-color: var(--background-blueviolet);
+    }
+    to {
+        left: calc(100% - 100px);
+        background-color: var(--background-palevioletred);
+   
+    }
+  }
+
