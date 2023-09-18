@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <title>Contact</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="forms.html">Formulário</a></li>
+            <li><a href="tags.html">Tags</a></li>
+        </ul>
+    </nav>
+    <h1>Formulários</h1>
+
+    <h2>Input type text</h2>
+    <form action="...(1)..." method="POST">
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            <label for="name">Informe o nome</label>
+            <input type="text" name="nome" />
+            <label>Informe o e-mail</label>
+            <input type="text" name="email" value="teste@teste.com" disabled />
+        </fieldset>
+    </form>
+
+    <h2>Input type button</h2>
+    <form action="....(1)...." method="POST">
+        <fieldset>
+            <legend>Escolha uma das opções abaixo</legend>
+            <label>Envio dos dados</label>
+            <input type="button" value="envia" />
+            <label>Cancela todos os dados do formulário</label>
+            <input type="button" value="cancel" />
+            <button type="submit">Enviar form</button>
+        </fieldset>
+    </form>
+
+    <h2>Datalist</h2>
+    <label for="fruta">Escolha uma fruta:</label>
+    <input type="text" id="fruta" list="frutas" placeholder="Escolha uma fruta">
+
+    <!-- Definindo o datalist com opções -->
+    <datalist id="frutas">
+        <option value="Maçã">
+        <option value="Banana">
+        <option value="Laranja">
+        <option value="Uva">
+        <option value="Pera">
+    </datalist>
+
+    <label for="cor">Escolha uma cor:</label>
+    <input type="text" id="cor" list="cores">
+
+    <!-- Definindo o datalist com opções de cores -->
+    <datalist id="cores" placeholder="Escolha uma cor">
+        <option value="#FF0000">Vermelho</option>
+        <option value="#00FF00">Verde</option>
+        <option value="#0000FF">Azul</option>
+        <option value="#FFFF00">Amarelo</option>
+        <option value="#FF00FF">Roxo</option>
+        <option value="#00FFFF">Ciano</option>
+    </datalist>
+
+    <h2>Optgroup</h2>
+    <label for="fruta">Escolha uma fruta:</label>
+    <select id="fruta">
+        <optgroup label="Frutas Vermelhas">
+            <option value="morango">Morango</option>
+            <option value="cereja">Cereja</option>
+        </optgroup>
+        <optgroup label="Frutas Cítricas">
+            <option value="laranja">Laranja</option>
+            <option value="limao">Limão</option>
+        </optgroup>
+    </select>
+
+
+    <h2>Campo de Pesquisa</h2>
+    <form action="#" method="get">
+        <label for="pesquisar">Pesquisar:</label>
+        <input type="search" id="pesquisar" name="q">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h2>Input Number</h2>
+    <form action="#" method="post">
+        <label for="idade">Digite sua idade:</label>
+        <input type="number" id="idade" name="idade" min="0" max="2" placeholder="Digite somente números">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Input Range</h2>
+    <form action="#" method="post">
+        <label for="volume">Ajuste o volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" step="1" value="50">
+        <output for="volume" id="volumeOutput">50</output>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Input type checkbox</h2>
+    <form action="....(1)...." method="POST">
+        <fieldset>
+            <legend>Qual é o pet que você tem?</legend>
+            <input type="checkbox" name="cachorro" value="cachorro" />
+            <label>Cachorro</label>
+            <input type="checkbox" name="gato" value="gato" checked />
+            <label>Gato</label>
+        </fieldset>
+    </form>
+
+    <h2>Input Hidden</h2>
+    <form action="processar.php" method="post">
+        <input type="hidden" name="usuario_id" value="123">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Input type date</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <label>Escolha uma data do banho e tosa:</label>
+            <input type="date" name="databanhotosa" value="yyyy/mm/dd" type="week"/>
+        </fieldset>
+    </form>
+
+    <h2>Input type email e password</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <label>Email:</label>
+            <input type="email" name="email"><br><br>
+            <label>Senha:</label>
+            <input type="password" name="senha" minlength="8" maxlength="10" pattern="[A-Za-z]{2,}"
+                title="Digite pelo menos 2 letras maiúsculas ou minúsculas" required><br><br>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+    <h2>Input URL</h2>
+    <form action="#">
+        <label for="url">Digite uma URL válida:</label>
+        <input type="url" id="url" name="url" pattern=".*\.com\.br\/.*" title="Digite uma URL válida"
+            spellcheck="true" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Input type file</h2>
+    <form action=".....(1)....." enctype="multipart/form-data">
+        <label>Selecione o arquivo:</label>
+        <input type="file" name="arquivo" accept=".doc"><br><br>
+    </form>
+
+    <h2>Input type file multiple</h2>
+    <form action="....(1)...." enctype="multipart/form-data">
+        <label>Selecione os arquivos:</label>
+        <input type="file" name="arquivos" multiple><br><br>
+    </form>
+
+    <h2>Input Color</h2>
+    <form action="#" method="post">
+        <label for="cor">Escolha uma cor:</label>
+        <input type="color" id="cor" name="cor" value="#ff0000">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Input type radio</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <label>Escolha o seu pet:</label>
+            <br />
+            <label>Cachorro</label>
+            <input type="radio" value="cachorro" checked />
+            <label>Gato</label>
+            <input type="radio" value="gato" />
+        </fieldset>
+    </form>
+
+    <h2>Input type reset</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <legend>Qual é o pet que você tem?</legend>
+            <label>Nome do pet:</label>
+            <input type="text" />
+            <input type="reset" value="Reset" />
+        </fieldset>
+    </form>
+
+    <h2>Input type submit</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <label>Envio dos dados do formulário</label>
+            <input type="submit" value="submit" />
+        </fieldset>
+    </form>
+
+    <h2>Input type tel</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <label>Informe o seu telefone celular:</label>
+            <input type="tel" name="fone" placeholder="dddXXXXXXXX" pattern="[0-9]{10}" required><br><br>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+    <h2>Textarea</h2>
+    <form action=".....(1)....." method="POST">
+        <fieldset>
+            <legend>Deixa o seu comentário!</legend>
+            <textarea name="comentario" cols="50" rows="5" maxlength="10"></textarea><br><br>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+    <h2>Select options</h2>
+    <form action="....(1)...." method="POST">
+        <p>Selecione o setor que você deseja atendimento:
+            <select name="setor" multiple>
+                <option value="racoes">Rações</option>
+                <option value="medicamentos">Medicamentos</option>
+                <option value="acessorios">Acessórios</option>
+                <option value="consultas">Consulta</option>
+                <option value="outros">Outros</option>
+            </select>
+            <input type="submit">
+        </p>
+    </form>
+
+    <h2>Form oninput</h2>
+    <form oninput="x.value=parseFloat(a.value)*parseFloat(b.value)">
+        <p>Digite o número de horas trabalhadas: <input type="text" id="a"></p>
+        <p>O valor da hora é: <input type="text" id="b"></p>
+        <p>O valor a receber dia 5 é R$ <output name="x"></output></p>
+    </form>
+
+    <h2>Input type text - requerid</h2>
+    <label>Informe o nome</label>
+    <input type="text" name="nome" placeholder="Digite o nome" required />
+    <label>Informe o e-mail</label>
+    <input type="text" name="email" placeholder="Digite o e-mail" required />
+
+    <h2>Input type text - pattern=[A-Za-z]{2,}</h2>
+    <form action="....(1)...." method="POST">
+        <fieldset>
+            <legend>Faça o login no sistema</legend>
+            <input type="text" name="login" pattern="[A-Za-z]{2,}" placeholder="Digite o login" required />
+            <input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

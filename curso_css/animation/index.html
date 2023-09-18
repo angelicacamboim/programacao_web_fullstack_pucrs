@@ -10,12 +10,15 @@
 
     <style>
         table {
-            border-collapse: collapse; /* Combina as bordas das células adjacentes */
+            border-collapse: collapse;
+            /* Combina as bordas das células adjacentes */
             width: 50%;
         }
 
-        th, td {
-            border: 1px solid black; /* Define uma borda de 1 pixel sólido */
+        th,
+        td {
+            border: 1px solid black;
+            /* Define uma borda de 1 pixel sólido */
             padding: 8px;
             text-align: left;
         }
@@ -24,13 +27,46 @@
 
 <body>
     <h1>CSS Animation</h1>
-    
+
     <h2>Animation-direction: reverse</h2>
 
     <div class="circle animation-direction-reverse"></div>
 
-    <p><b>Keyframes:</b> <br> 
+    <p><b>REVERSE: </b>começa pela última chave do @keyframes e vai ate a primeira, se o iteration count estiver setado,
+        no momento de repetir, será também da última chave do @keyframes ate a primeira.<br>
+        <b>Keyframes:</b> <br>
 
+    <table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Porcentagem: 0%</th>
+                    <th>Porcentagem: 25%</th>
+                    <th>Porcentagem: 50%</th>
+                    <th>Porcentagem: 75%</th>
+                    <th>Porcentagem: 100%</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="red"></td>
+                    <td class="blueviolet"></td>
+                    <td class="blue"></td>
+                    <td class="palevioletred"></td>
+                    <td class="red"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        </p>
+
+
+        <h2>Animation-iteration-count: 3x</h2>
+
+        <div class="circle animation-iteration-count"></div>
+
+        <p>
+            <b>Keyframes:</b>
         <table>
             <table>
                 <thead>
@@ -38,7 +74,6 @@
                         <th>Porcentagem: 0%</th>
                         <th>Porcentagem: 25%</th>
                         <th>Porcentagem: 50%</th>
-                        <th>Porcentagem: 75%</th>
                         <th>Porcentagem: 100%</th>
                     </tr>
                 </thead>
@@ -48,282 +83,253 @@
                         <td class="blueviolet"></td>
                         <td class="blue"></td>
                         <td class="palevioletred"></td>
-                        <td class="red"></td>
                     </tr>
                 </tbody>
             </table>
-    
-    </p>
+            </p>
 
+            <h2>Animation-direction: alternate-reverse</h2>
 
-    <h2>Animation-iteration-count: 3x</h2>
+            <div class="circle animation-alternate-reverse"></div>
 
-    <div class="circle animation-iteration-count"></div>
-
-    <p><b>Keyframes:</b> 
-        <table>
+            <p><b>Keyframes:</b>
             <table>
-                <thead>
-                    <tr>
-                        <th>Porcentagem: 0%</th>
-                        <th>Porcentagem: 25%</th>
-                        <th>Porcentagem: 50%</th>
-                        <th>Porcentagem: 100%</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="red"></td>
-                        <td class="blueviolet"></td>
-                        <td class="blue"></td>
-                        <td class="palevioletred"></td>
-                    </tr>
-                </tbody>
-            </table>
-    </p>
-  
-    <h2>Animation-direction: alternate-reverse</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Porcentagem: 0%</th>
+                            <th>Porcentagem: 25%</th>
+                            <th>Porcentagem: 50%</th>
+                            <th>Porcentagem: 75%</th>
+                            <th>Porcentagem: 100%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="red"></td>
+                            <td class="blueviolet"></td>
+                            <td class="blue"></td>
+                            <td class="palevioletred"></td>
+                            <td class="red"></td>
+                        </tr>
+                    </tbody>
+                </table>
 
-    <div class="circle animation-alternate-reverse"></div>
+                </p>
 
-    <p><b>Keyframes:</b> 
-        <table>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Porcentagem: 0%</th>
-                        <th>Porcentagem: 25%</th>
-                        <th>Porcentagem: 50%</th>
-                        <th>Porcentagem: 75%</th>
-                        <th>Porcentagem: 100%</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="red"></td>
-                        <td class="blueviolet"></td>
-                        <td class="blue"></td>
-                        <td class="palevioletred"></td>
-                        <td class="red"></td>
-                    </tr>
-                </tbody>
-            </table>
-    
-    </p>
+                <h2>Animation com delay de 3s</h2>
 
-    <h2>Animation com delay de 3s</h2>
+                <div class="circle animation-delay"></div>
 
-    <div class="circle animation-delay"></div>
-
-    <p><b>Keyframes:</b>
-        <table>
-            <table>
-                <thead>
-                    <tr>
-                        <th>from</th>
-                        <th>to</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="blueviolet"></td>
-                        <td class="palevioletred"></td>
-                    </tr>
-                </tbody>
-            </table>
-    </p>
-   
-
-    <h2>Animation-timing-function</h2>
-
-    <h3>linear</h3>
-
-    <table>
-        <table>
-            <thead>
-                <tr>
-                    <th>from</th>
-                    <th>to</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="blueviolet"></td>
-                    <td class="palevioletred"></td>
-                </tr>
-            </tbody>
-        </table>
-
-    <p>animation-timing-function: <b>linear</b> 
-    </p>
-
-    <div class="circle animation-linear"></div>
-
-    <h3>ease</h3>
-
-    <table>
-        <table>
-            <thead>
-                <tr>
-                    <th>from</th>
-                    <th>to</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="blueviolet"></td>
-                    <td class="palevioletred"></td>
-                </tr>
-            </tbody>
-        </table>
-
-    <p>animation-timing-function: <b>ease</b> 
-    </p>
-
-    <div class="circle animation-ease"></div>
-
-    <h3>ease-in</h3>
-
-    <table>
-        <table>
-            <thead>
-                <tr>
-                    <th>from</th>
-                    <th>to</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="blueviolet"></td>
-                    <td class="palevioletred"></td>
-                </tr>
-            </tbody>
-        </table>
-
-    <p>animation-timing-function: <b>ease-in</b> 
-    </p>
-
-    <div class="circle animation-ease-in"></div>
-
-    <h3>ease-out</h3>
-
-    <table>
-        <table>
-            <thead>
-                <tr>
-                    <th>from</th>
-                    <th>to</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="blueviolet"></td>
-                    <td class="palevioletred"></td>
-                </tr>
-            </tbody>
-        </table>
-
-    <p>animation-timing-function: <b>ease-out</b> 
-    </p>
-
-    <div class="circle animation-ease-out"></div>
-
-    <h3>ease-in-out</h3>
-    <table>
-        <table>
-            <thead>
-                <tr>
-                    <th>from</th>
-                    <th>to</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="blueviolet"></td>
-                    <td class="palevioletred"></td>
-                </tr>
-            </tbody>
-        </table>
-    
-    <p>animation-timing-function: <b>ease-in-out </b> 
-    </p>
-    
-    <div class="circle animation-ease-in-out"></div>
-
-    <h2>Animation-fill-mode</h2>
+                <p><b>Keyframes:</b>
+                <table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>from</th>
+                                <th>to</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="blueviolet"></td>
+                                <td class="palevioletred"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </p>
 
 
-    <h3>forwards</h3>
+                    <h2>Animation-timing-function</h2>
 
-    <table>
-        <table>
-            <thead>
-                <tr>
-                    <th>from</th>
-                    <th>to</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="blueviolet"></td>
-                    <td class="palevioletred"></td>
-                </tr>
-            </tbody>
-        </table>
+                    <h3>linear</h3>
 
-    <p>animation-fill-mode:<b>forwards</b> 
-    </p>
+                    <table>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>from</th>
+                                    <th>to</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="blueviolet"></td>
+                                    <td class="palevioletred"></td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-    <div class="circle animation-forwards"></div>
+                        <p>animation-timing-function: <b>linear</b>
+                        </p>
+
+                        <div class="circle animation-linear"></div>
+
+                        <h3>ease</h3>
+
+                        <table>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>from</th>
+                                        <th>to</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="blueviolet"></td>
+                                        <td class="palevioletred"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p>animation-timing-function: <b>ease</b>
+                            </p>
+
+                            <div class="circle animation-ease"></div>
+
+                            <h3>ease-in</h3>
+
+                            <table>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>from</th>
+                                            <th>to</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="blueviolet"></td>
+                                            <td class="palevioletred"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <p>animation-timing-function: <b>ease-in</b>
+                                </p>
+
+                                <div class="circle animation-ease-in"></div>
+
+                                <h3>ease-out</h3>
+
+                                <table>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>from</th>
+                                                <th>to</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="blueviolet"></td>
+                                                <td class="palevioletred"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>animation-timing-function: <b>ease-out</b>
+                                    </p>
+
+                                    <div class="circle animation-ease-out"></div>
+
+                                    <h3>ease-in-out</h3>
+                                    <table>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>from</th>
+                                                    <th>to</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="blueviolet"></td>
+                                                    <td class="palevioletred"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <p>animation-timing-function: <b>ease-in-out </b>
+                                        </p>
+
+                                        <div class="circle animation-ease-in-out"></div>
+
+                                        <h2>Animation-fill-mode</h2>
 
 
-    <table>
-        <table>
-            <thead>
-                <tr>
-                    <th>from</th>
-                    <th>to</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="blueviolet"></td>
-                    <td class="palevioletred"></td>
-                </tr>
-            </tbody>
-        </table>
+                                        <h3>forwards</h3>
 
-    <h3>backwards</h3>
-    
-    <p>animation-fill-mode:<b>backwards</b> 
-    </p>
+                                        <table>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>from</th>
+                                                        <th>to</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="blueviolet"></td>
+                                                        <td class="palevioletred"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
 
-    <div class="circle animation-backwards"></div>
+                                            <p>animation-fill-mode:<b>forwards</b>
+                                            </p>
 
-    <h3>both</h3>
+                                            <div class="circle animation-forwards"></div>
 
-    <table>
-        <table>
-            <thead>
-                <tr>
-                    <th>from</th>
-                    <th>to</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="blueviolet"></td>
-                    <td class="palevioletred"></td>
-                </tr>
-            </tbody>
-        </table>
-    
-    <p>animation-fill-mode:<b>both</b> 
-    </p>
 
-    <div class="circle animation-both"></div>
+                                            <table>
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>from</th>
+                                                            <th>to</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="blueviolet"></td>
+                                                            <td class="palevioletred"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
 
-   
+                                                <h3>backwards</h3>
+
+                                                <p>animation-fill-mode:<b>backwards</b>
+                                                </p>
+
+                                                <div class="circle animation-backwards"></div>
+
+                                                <h3>both</h3>
+
+                                                <table>
+                                                    <table>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>from</th>
+                                                                <th>to</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="blueviolet"></td>
+                                                                <td class="palevioletred"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <p>animation-fill-mode:<b>both</b>
+                                                    </p>
+
+                                                    <div class="circle animation-both"></div>
+
+
 </body>
 
 </html>

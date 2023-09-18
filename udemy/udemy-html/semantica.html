@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantica HTML</title>
+
+    <style>
+        header {
+            border: 4px dashed palevioletred;
+        }
+
+        header::before {
+            content: "HEADER";
+        }
+
+        nav::before {
+            content: "NAV";
+        }
+
+        main {
+            background-color: hotpink;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        figure {
+            text-align: center;
+            /* Centraliza o conteúdo dentro do elemento figure */
+        }
+
+        article {
+            background-color: pink;
+            flex: 1;
+            padding: 10px;
+        }
+
+        article::before {
+            content: "ARTICLE";
+        }
+
+        article section {
+            border: 5px double purple;
+            background-color: white;
+        }
+
+        section::before {
+            content: "SECTION";
+        }
+
+        aside {
+            background-color: aquamarine;
+            width: 30%;
+            /* Defina a largura do aside conforme necessário */
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* Adicionando texto após o conteúdo do elemento */
+        aside::before {
+            content: "ASIDE";
+        }
+
+        footer {
+            background-color: crimson;
+            color: white;
+        }
+
+        footer::before {
+            content: "FOOTER";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href=”#”>pagina 1</a></li>
+                <li><a href=”#”>pagina 2</a></li>
+                <li><a href=”#”>pagina 3</a></li>
+                <li><a href=”#”>pagina 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article>
+
+            <figure>
+                <h3>Tag figure</h3>
+
+                <img width="320" height="240" src="https://source.unsplash.com/random" alt="Campo de arroz">
+                <figcaption>legenda</figcaption>
+            </figure>
+
+            <section>
+                <h3>Tag contenteditable</h3>
+                <p contenteditable="true">Este é um paragráfo que pode ser editado.</p>
+
+            </section>
+
+            <section>
+                <h3>Tag Datalist</h3>
+
+                <form>
+                    <p>Animais:</p>
+                    <input list="animais" name="animal">
+                    <datalist id="animais">
+                        <option value="Cachorro"></option>
+                        <option value="Gato"></option>
+                        <option value="Cavalo"></option>
+                        <option value="Elefante"></option>
+                    </datalist>
+                </form>
+            </section>
+            <section>
+                <h3>Tag Progress</h3>
+
+                <p>Barra de loading:</p>
+                <progress value="63" max="100">
+            </section>
+
+            <section>
+                <h3>Tag Details</h3>
+
+                <details open="open">
+                    <summary>Cachorro</summary>
+                    <p>É um mamífero de 4 patas e também é um animal doméstico.</p>
+                </details>
+
+                <details>
+                    <summary>Gato</summary>
+                    <p>É um mamífero de 4 patas e também é um animal doméstico.</p>
+                </details>
+            </section>
+
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Preencha o formulário para receber novidades!</legend>
+                        <label>E-mail:</label>
+                        <input type="email" name="email" required placeholder="Digite seu e-mail" autofocus>
+                        <label>Nome:</label>
+                        <input type="text" name="name" required placeholder="Digite seu nome completo">
+                        <input type="submit" name="Enviar">
+                    </fieldset>
+                </form>
+            </section>
+
+        </article>
+        <aside>
+            <nav>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                </ul>
+            </nav>
+        </aside>
+
+
+    </main>
+
+
+    <footer>
+        <div>Rodapé - footer</div>
+    </footer>
+</body>
+
+</html>

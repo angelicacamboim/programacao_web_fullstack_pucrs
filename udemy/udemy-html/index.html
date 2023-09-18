@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Recursos do HTML5</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Produtos</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<article>
+		<h1>Recursos do HTML5</h1>
+		<div>
+			<video width="320" height="240" controls>
+				<source src="video/cidade.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div>
+			<audio controls>
+				<source src="audio/music.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+		<div>
+			<figure>
+				<img width="320" height="240" src="https://source.unsplash.com/random" alt="Campo de arroz">
+				<figcaption>legenda</figcaption>
+			</figure>
+		</div>
+		<div>
+			<h3>Preencha o formulário para receber novidades!</h3>
+			<form>
+				<fieldset>
+					<legend>Preencha seus dados pessoais</legend>
+					<label>E-mail:</label>
+					<input type="email" name="email" required placeholder="Digite seu melhor e-mail" autofocus>
+					<label>Nome:</label>
+					<input type="text" name="name" required placeholder="Digite seu nome completo">
+					<input type="submit" name="Enviar">
+				</fieldset>
+			</form>
+		</div>
+		<div>
+			<p contenteditable="true">Este é um paragráfo que pode ser editado.</p>
+		</div>
+	</article>
+	<aside>
+		<p>Confira os nossos produtos, <a href="#">Clicando aqui!</a></p>
+	</aside>
+	<details open="open">
+		<summary>Cachorro</summary>
+		<p>É um mamífero de 4 patas e também é um animal doméstico.</p>
+	</details>
+	<details>
+		<summary>Gato</summary>
+		<p>É um mamífero de 4 patas e também é um animal doméstico.</p>
+	</details>
+	<form>
+		<p>Animais:</p>
+		<input list="animais" name="animal">
+		<datalist id="animais">
+			<option value="Cachorro"></option>
+			<option value="Gato"></option>
+			<option value="Cavalo"></option>
+			<option value="Elefante"></option>
+		</datalist>
+	</form>
+	<p>Barra de loading:</p>
+	<progress value="63" max="100">
+		<footer>
+			<p>Rodapé</p>
+		</footer>
+</body>
+
+</html>
